@@ -1,0 +1,1075 @@
+
+(object Petal
+    version    	42
+    _written   	"Rose 4.5.8054a"
+    charSet    	0)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5E5DB5F100DF"
+    defaults   	(object defaults
+	rightMargin 	0.250000
+	leftMargin 	0.250000
+	topMargin  	0.250000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	TRUE
+	gridX      	16
+	gridY      	16
+	defaultFont 	(object Font
+	    size       	10
+	    face       	"Arial"
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	1
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"5E5DB5F100E1"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list
+	    (object Class "User"
+		quid       	"5E5DB603031A"
+		stereotype 	"Actor")
+	    (object UseCase "upoad Dataset"
+		quid       	"5E5DB60803B6")
+	    (object UseCase "preprocess Dataset"
+		quid       	"5E5DB61700C6")
+	    (object UseCase "generate training Model"
+		quid       	"5E5DB62202A2")
+	    (object UseCase "run SVM Algorithm"
+		quid       	"5E5DB63200BB")
+	    (object UseCase "run ANN Algorithm"
+		quid       	"5E5DB63D02FC")
+	    (object UseCase "NewUseCase"
+		quid       	"5E5DB798012C")
+	    (object UseCase "uploadTestDataDeteckAttack"
+		quid       	"5E5DB8080083")
+	    (object UseCase "ViewAccuranceyGraph"
+		quid       	"5E5DB8870081")
+	    (object UseCase "exit"
+		quid       	"5E5DB8D7016B")
+	    (object Association "$UNNAMED$0"
+		quid       	"5E5DB8E90318"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$1"
+			quid       	"5E5DB8EB0015"
+			supplier   	"Use Case View::upoad Dataset"
+			quidu      	"5E5DB60803B6"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$2"
+			quid       	"5E5DB8EB0016"
+			supplier   	"Use Case View::User"
+			quidu      	"5E5DB603031A")))
+	    (object Association "$UNNAMED$3"
+		quid       	"5E5DB8F101B9"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$4"
+			quid       	"5E5DB8F202B5"
+			supplier   	"Use Case View::preprocess Dataset"
+			quidu      	"5E5DB61700C6"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$5"
+			quid       	"5E5DB8F202B6"
+			supplier   	"Use Case View::User"
+			quidu      	"5E5DB603031A")))
+	    (object Association "$UNNAMED$6"
+		quid       	"5E5DB8F802CF"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$7"
+			quid       	"5E5DB8F90394"
+			supplier   	"Use Case View::generate training Model"
+			quidu      	"5E5DB62202A2"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$8"
+			quid       	"5E5DB8F90395"
+			supplier   	"Use Case View::User"
+			quidu      	"5E5DB603031A")))
+	    (object Association "$UNNAMED$9"
+		quid       	"5E5DB8FC00CF"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$10"
+			quid       	"5E5DB8FD016C"
+			supplier   	"Use Case View::run SVM Algorithm"
+			quidu      	"5E5DB63200BB"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$11"
+			quid       	"5E5DB8FD016D"
+			supplier   	"Use Case View::User"
+			quidu      	"5E5DB603031A")))
+	    (object Association "$UNNAMED$12"
+		quid       	"5E5DB8FF02F7"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$13"
+			quid       	"5E5DB900030C"
+			supplier   	"Use Case View::run ANN Algorithm"
+			quidu      	"5E5DB63D02FC"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$14"
+			quid       	"5E5DB900030D"
+			supplier   	"Use Case View::User"
+			quidu      	"5E5DB603031A")))
+	    (object Association "$UNNAMED$15"
+		quid       	"5E5DB902029E"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$16"
+			quid       	"5E5DB904015D"
+			supplier   	"Use Case View::uploadTestDataDeteckAttack"
+			quidu      	"5E5DB8080083"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$17"
+			quid       	"5E5DB904015E"
+			supplier   	"Use Case View::User"
+			quidu      	"5E5DB603031A")))
+	    (object Association "$UNNAMED$18"
+		quid       	"5E5DB9100391"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$19"
+			quid       	"5E5DB91202D5"
+			supplier   	"Use Case View::ViewAccuranceyGraph"
+			quidu      	"5E5DB8870081"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$20"
+			quid       	"5E5DB91202D6"
+			supplier   	"Use Case View::User"
+			quidu      	"5E5DB603031A")))
+	    (object Association "$UNNAMED$21"
+		quid       	"5E5DB915004C"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$22"
+			quid       	"5E5DB916034D"
+			supplier   	"Use Case View::exit"
+			quidu      	"5E5DB8D7016B"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$23"
+			quid       	"5E5DB916034E"
+			supplier   	"Use Case View::User"
+			quidu      	"5E5DB603031A"))))
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"5E5DB5F101A1"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	116
+		items      	(list diagram_item_list
+		    (object UseCaseView "Use Case View::upoad Dataset" @1
+			location   	(1632, 208)
+			label      	(object ItemLabel
+			    Parent_View 	@1
+			    location   	(1632, 346)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"upoad Dataset")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E5DB60803B6"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::preprocess Dataset" @2
+			location   	(1648, 464)
+			label      	(object ItemLabel
+			    Parent_View 	@2
+			    location   	(1648, 602)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"preprocess Dataset")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E5DB61700C6"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::generate training Model" @3
+			location   	(1632, 720)
+			label      	(object ItemLabel
+			    Parent_View 	@3
+			    location   	(1632, 858)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"generate training Model")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E5DB62202A2"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::run SVM Algorithm" @4
+			location   	(1648, 960)
+			label      	(object ItemLabel
+			    Parent_View 	@4
+			    location   	(1648, 1098)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"run SVM Algorithm")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E5DB63200BB"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::run ANN Algorithm" @5
+			location   	(1648, 1200)
+			label      	(object ItemLabel
+			    Parent_View 	@5
+			    location   	(1648, 1338)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"run ANN Algorithm")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E5DB63D02FC"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::uploadTestDataDeteckAttack" @6
+			location   	(1632, 1456)
+			label      	(object ItemLabel
+			    Parent_View 	@6
+			    location   	(1632, 1594)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"uploadTestDataDeteckAttack")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E5DB8080083"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::ViewAccuranceyGraph" @7
+			location   	(1664, 1696)
+			label      	(object ItemLabel
+			    Parent_View 	@7
+			    location   	(1664, 1834)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"ViewAccuranceyGraph")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E5DB8870081"
+			height     	118
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Use Case View::User" @8
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(480, 1168)
+			label      	(object ItemLabel
+			    Parent_View 	@8
+			    location   	(480, 1328)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	327
+			    justify    	0
+			    label      	"User")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E5DB603031A"
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$0" @9
+			location   	(1015, 719)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E5DB8E90318"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$1" @10
+				Parent_View 	@9
+				location   	(471, -369)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E5DB8EB0015"
+				client     	@9
+				supplier   	@1
+				line_style 	0)
+			    (object RoleView "$UNNAMED$2" @11
+				Parent_View 	@9
+				location   	(471, -369)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E5DB8EB0016"
+				client     	@9
+				supplier   	@8
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$3" @12
+			location   	(1000, 851)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E5DB8F101B9"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$4" @13
+				Parent_View 	@12
+				location   	(456, -237)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E5DB8F202B5"
+				client     	@12
+				supplier   	@2
+				line_style 	0)
+			    (object RoleView "$UNNAMED$5" @14
+				Parent_View 	@12
+				location   	(456, -237)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E5DB8F202B6"
+				client     	@12
+				supplier   	@8
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$6" @15
+			location   	(975, 971)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E5DB8F802CF"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$7" @16
+				Parent_View 	@15
+				location   	(479, 11)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E5DB8F90394"
+				client     	@15
+				supplier   	@3
+				line_style 	0)
+			    (object RoleView "$UNNAMED$8" @17
+				Parent_View 	@15
+				location   	(479, 11)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E5DB8F90395"
+				client     	@15
+				supplier   	@8
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$9" @18
+			location   	(1036, 1065)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E5DB8FC00CF"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$10" @19
+				Parent_View 	@18
+				location   	(540, 105)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E5DB8FD016C"
+				client     	@18
+				supplier   	@4
+				line_style 	0)
+			    (object RoleView "$UNNAMED$11" @20
+				Parent_View 	@18
+				location   	(540, 105)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E5DB8FD016D"
+				client     	@18
+				supplier   	@8
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$12" @21
+			location   	(1036, 1181)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E5DB8FF02F7"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$13" @22
+				Parent_View 	@21
+				location   	(540, 221)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E5DB900030C"
+				client     	@21
+				supplier   	@5
+				line_style 	0)
+			    (object RoleView "$UNNAMED$14" @23
+				Parent_View 	@21
+				location   	(540, 221)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E5DB900030D"
+				client     	@21
+				supplier   	@8
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$15" @24
+			location   	(1028, 1303)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E5DB902029E"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$16" @25
+				Parent_View 	@24
+				location   	(532, 343)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E5DB904015D"
+				client     	@24
+				supplier   	@6
+				line_style 	0)
+			    (object RoleView "$UNNAMED$17" @26
+				Parent_View 	@24
+				location   	(532, 343)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E5DB904015E"
+				client     	@24
+				supplier   	@8
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$18" @27
+			location   	(1045, 1419)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E5DB9100391"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$19" @28
+				Parent_View 	@27
+				location   	(549, 459)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E5DB91202D5"
+				client     	@27
+				supplier   	@7
+				line_style 	0)
+			    (object RoleView "$UNNAMED$20" @29
+				Parent_View 	@27
+				location   	(549, 459)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E5DB91202D6"
+				client     	@27
+				supplier   	@8
+				line_style 	0)))
+		    (object UseCaseView "Use Case View::exit" @30
+			location   	(1664, 1984)
+			label      	(object ItemLabel
+			    Parent_View 	@30
+			    location   	(1664, 2122)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"exit")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E5DB8D7016B"
+			height     	118
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$21" @31
+			location   	(1059, 1566)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E5DB915004C"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$22" @32
+				Parent_View 	@31
+				location   	(563, 606)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E5DB916034D"
+				client     	@31
+				supplier   	@30
+				line_style 	0)
+			    (object RoleView "$UNNAMED$23" @33
+				Parent_View 	@31
+				location   	(563, 606)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E5DB916034E"
+				client     	@31
+				supplier   	@8
+				line_style 	0)))))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"5E5DB5F100E0"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"5E5DB5F100E2"
+	logical_models 	(list unit_reference_list
+	    (object Mechanism @34
+		logical_models 	(list unit_reference_list
+		    (object Object "User"
+			quid       	"5E5DB9D400A8"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"5E5DB9E903AC"
+				supplier   	"Application"
+				quidu      	"5E5DB9DE02B9"
+				messages   	(list Messages
+				    (object Message "Upload Dataset"
+					quid       	"5E5DB9E903AD"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	0)
+				    (object Message "preprocess dataset"
+					quid       	"5E5DB9F30204"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	1)
+				    (object Message "generate training model"
+					quid       	"5E5DBA5A0254"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	2)
+				    (object Message "run SVM Algorithm"
+					quid       	"5E5DBA8C026C"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	3)
+				    (object Message "run ANN Algorithm"
+					quid       	"5E5DBB6E025C"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	4)
+				    (object Message "upload test Data detect Attack"
+					quid       	"5E5DBB7900BC"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	5)
+				    (object Message "view accurancey graph"
+					quid       	"5E5DBB9803DC"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	6))))
+			persistence 	"Transient"
+			multi      	FALSE)
+		    (object Object "Application"
+			quid       	"5E5DB9DE02B9"
+			persistence 	"Transient"
+			multi      	FALSE))))
+	logical_presentations 	(list unit_reference_list
+	    (object ClassDiagram "Main"
+		quid       	"5E5DB5F101A6"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))
+	    (object InteractionDiagram "NewDiagram"
+		mechanism_ref 	@34
+		quid       	"5E5DB9D1028F"
+		title      	"NewDiagram"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object InterObjView "User" @35
+			location   	(448, 224)
+			font       	(object Font
+			    underline  	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@35
+			    location   	(448, 224)
+			    fill_color 	12058623
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"User")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E5DB9D400A8"
+			width      	300
+			height     	1441
+			icon_height 	0
+			icon_width 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @36
+			    location   	(448, 368)
+			    line_color 	3342489
+			    InterObjView 	@35
+			    height     	120
+			    y_coord    	60
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @37
+			    location   	(448, 544)
+			    line_color 	3342489
+			    InterObjView 	@35
+			    height     	136
+			    y_coord    	76
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @38
+			    location   	(448, 720)
+			    line_color 	3342489
+			    InterObjView 	@35
+			    height     	120
+			    y_coord    	60
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @39
+			    location   	(448, 928)
+			    line_color 	3342489
+			    InterObjView 	@35
+			    height     	120
+			    y_coord    	60
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @40
+			    location   	(448, 1088)
+			    line_color 	3342489
+			    InterObjView 	@35
+			    height     	120
+			    y_coord    	60
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @41
+			    location   	(448, 1296)
+			    line_color 	3342489
+			    InterObjView 	@35
+			    height     	120
+			    y_coord    	60
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @42
+			    location   	(448, 1456)
+			    line_color 	3342489
+			    InterObjView 	@35
+			    height     	120
+			    y_coord    	60
+			    Nested     	FALSE))
+		    (object InterObjView "Application" @43
+			location   	(1680, 224)
+			font       	(object Font
+			    underline  	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@43
+			    location   	(1680, 224)
+			    fill_color 	12058623
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Application")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E5DB9DE02B9"
+			width      	300
+			height     	1441
+			icon_height 	0
+			icon_width 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @44
+			    location   	(1680, 368)
+			    line_color 	3342489
+			    InterObjView 	@43
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @45
+			    location   	(1680, 560)
+			    line_color 	3342489
+			    InterObjView 	@43
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @46
+			    location   	(1680, 720)
+			    line_color 	3342489
+			    InterObjView 	@43
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @47
+			    location   	(1680, 928)
+			    line_color 	3342489
+			    InterObjView 	@43
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @48
+			    location   	(1680, 1088)
+			    line_color 	3342489
+			    InterObjView 	@43
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @49
+			    location   	(1680, 1296)
+			    line_color 	3342489
+			    InterObjView 	@43
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @50
+			    location   	(1680, 1456)
+			    line_color 	3342489
+			    InterObjView 	@43
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterMessView "" @51
+			location   	(0, 368)
+			label      	(object SegLabel @52
+			    Parent_View 	@51
+			    location   	(1064, 324)
+			    quidu      	"5E5DB9E903AD"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	278
+			    justify    	0
+			    label      	"Upload Dataset"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@35
+			supplier   	@43
+			Focus_Src  	@36
+			Focus_Entry 	@44
+			origin     	(464, 368)
+			terminus   	(1664, 368)
+			ordinal    	0)
+		    (object InterMessView "" @53
+			location   	(0, 560)
+			label      	(object SegLabel @54
+			    Parent_View 	@53
+			    location   	(1064, 516)
+			    quidu      	"5E5DB9F30204"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	347
+			    justify    	0
+			    label      	"preprocess dataset"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@35
+			supplier   	@43
+			Focus_Src  	@37
+			Focus_Entry 	@45
+			origin     	(464, 560)
+			terminus   	(1664, 560)
+			ordinal    	1)
+		    (object InterMessView "" @55
+			location   	(0, 720)
+			label      	(object SegLabel @56
+			    Parent_View 	@55
+			    location   	(1064, 676)
+			    quidu      	"5E5DBA5A0254"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	419
+			    justify    	0
+			    label      	"generate training model"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@35
+			supplier   	@43
+			Focus_Src  	@38
+			Focus_Entry 	@46
+			origin     	(464, 720)
+			terminus   	(1664, 720)
+			ordinal    	2)
+		    (object InterMessView "" @57
+			location   	(0, 928)
+			label      	(object SegLabel @58
+			    Parent_View 	@57
+			    location   	(1064, 884)
+			    quidu      	"5E5DBA8C026C"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	337
+			    justify    	0
+			    label      	"run SVM Algorithm"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@35
+			supplier   	@43
+			Focus_Src  	@39
+			Focus_Entry 	@47
+			origin     	(464, 928)
+			terminus   	(1664, 928)
+			ordinal    	3)
+		    (object InterMessView "" @59
+			location   	(0, 1088)
+			label      	(object SegLabel @60
+			    Parent_View 	@59
+			    location   	(1064, 1044)
+			    quidu      	"5E5DBB6E025C"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	332
+			    justify    	0
+			    label      	"run ANN Algorithm"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@35
+			supplier   	@43
+			Focus_Src  	@40
+			Focus_Entry 	@48
+			origin     	(464, 1088)
+			terminus   	(1664, 1088)
+			ordinal    	4)
+		    (object InterMessView "" @61
+			location   	(0, 1296)
+			label      	(object SegLabel @62
+			    Parent_View 	@61
+			    location   	(1064, 1252)
+			    quidu      	"5E5DBB7900BC"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	557
+			    justify    	0
+			    label      	"upload test Data detect Attack"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@35
+			supplier   	@43
+			Focus_Src  	@41
+			Focus_Entry 	@49
+			origin     	(464, 1296)
+			terminus   	(1664, 1296)
+			ordinal    	5)
+		    (object InterMessView "" @63
+			location   	(0, 1456)
+			label      	(object SegLabel @64
+			    Parent_View 	@63
+			    location   	(1064, 1412)
+			    quidu      	"5E5DBB9803DC"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	413
+			    justify    	0
+			    label      	"view accurancey graph"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@35
+			supplier   	@43
+			Focus_Src  	@42
+			Focus_Entry 	@50
+			origin     	(464, 1456)
+			terminus   	(1664, 1456)
+			ordinal    	6)))
+	    (object ObjectDiagram "NewDiagram"
+		mechanism_ref 	@34
+		quid       	"5E5DBBB401B2"
+		title      	"NewDiagram"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object ObjectView "User" @65
+			location   	(704, 1008)
+			font       	(object Font
+			    underline  	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@65
+			    location   	(623, 957)
+			    fill_color 	12058623
+			    nlines     	2
+			    max_width  	162
+			    justify    	0
+			    label      	"User")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E5DB9D400A8"
+			height     	126
+			annotation 	4
+			autoResize 	TRUE
+			subobjects 	0
+			x_offset   	0.000000
+			y_offset   	0.000000)
+		    (object ObjectView "Application" @66
+			location   	(2864, 992)
+			font       	(object Font
+			    underline  	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@66
+			    location   	(2783, 941)
+			    fill_color 	12058623
+			    nlines     	2
+			    max_width  	162
+			    justify    	0
+			    label      	"Application")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E5DB9DE02B9"
+			height     	126
+			annotation 	4
+			autoResize 	TRUE
+			subobjects 	0
+			x_offset   	0.000000
+			y_offset   	0.000000)
+		    (object LinkView "" @67
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E5DB9E903AC"
+			client     	@65
+			supplier   	@66
+			line_style 	0)
+		    (object MessView "" @68
+			location   	(1784, 955)
+			line_color 	3342489
+			label      	(object SegLabel @69
+			    Parent_View 	@68
+			    location   	(1784, 629)
+			    quidu      	"5E5DB9E903AD"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	328
+			    justify    	0
+			    label      	"Upload Dataset"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			label      	(object SegLabel @70
+			    Parent_View 	@68
+			    location   	(1784, 676)
+			    quidu      	"5E5DB9F30204"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	400
+			    justify    	0
+			    label      	"preprocess dataset"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			label      	(object SegLabel @71
+			    Parent_View 	@68
+			    location   	(1784, 723)
+			    quidu      	"5E5DBA5A0254"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	472
+			    justify    	0
+			    label      	"generate training model"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			label      	(object SegLabel @72
+			    Parent_View 	@68
+			    location   	(1784, 770)
+			    quidu      	"5E5DBA8C026C"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	391
+			    justify    	0
+			    label      	"run SVM Algorithm"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			label      	(object SegLabel @73
+			    Parent_View 	@68
+			    location   	(1784, 817)
+			    quidu      	"5E5DBB6E025C"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	382
+			    justify    	0
+			    label      	"run ANN Algorithm"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			label      	(object SegLabel @74
+			    Parent_View 	@68
+			    location   	(1784, 864)
+			    quidu      	"5E5DBB7900BC"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	604
+			    justify    	0
+			    label      	"upload test Data detect Attack"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			label      	(object SegLabel @75
+			    Parent_View 	@68
+			    location   	(1784, 911)
+			    quidu      	"5E5DBB9803DC"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	460
+			    justify    	0
+			    label      	"view accurancey graph"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			object_arc 	@67
+			pctDist    	0.500000
+			height     	45
+			orientation 	0
+			dir        	1
+			origin     	(1724, 955)
+			terminus   	(1844, 955))))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"5E5DB5F100E2"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"5E5DB5F101A0"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    process_structure 	(object Processes
+	quid       	"5E5DB5F100E3"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"5E5DB5F100E5"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	quid       	"5E5DB5F100E4"))
